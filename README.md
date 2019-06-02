@@ -3,7 +3,7 @@
 
 ## Internet Security:
 1. Packet Sniffing and Spoofing.
-    - Scapy Tuorial
+    - Scapy Tutorial
 
 ---
 ## Computer Security:
