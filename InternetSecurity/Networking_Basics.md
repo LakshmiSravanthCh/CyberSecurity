@@ -1,4 +1,4 @@
-The 7 layers of Networking:
+The 7 layers of Networking:  
 7. Application  
 6. Presentation  
 5. Session  
