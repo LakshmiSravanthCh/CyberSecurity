@@ -1,11 +1,11 @@
 The 7 layers of Networking:
-7. Application
-6. Presentation
-5. Session
-4. Transport
-3. Network
-2. Data Link
-1. Physical
+7. Application  
+6. Presentation  
+5. Session  
+4. Transport  
+3. Network  
+2. Data Link  
+1. Physical  
 
 These 7 layers refer to the _Open Systems Interconnection(OSI)_ model, a conceptual framework that describes the functions of a networking or telecommunication system. 
 
@@ -57,9 +57,9 @@ In oredr to send and direct packets through the network, computers need to be ab
 ## Network Hubs and Switches:
 Switches control only the packets intended for certain number of IP addresses to pass through switchs. The switch only know about the addresses of the computers that are switched directly into the switch. So you can only send messages to a small number of devices - how many ports the switch has. If you need to send a mesaage to a computer on another network, it will need to be sent through a router.
 
-__DHCP:__ Dynamic Host configuration protocol: It assigns IP address to client devices, such as desktop computers, laptops, and phones, when they are plugged into Ethernet or connected a wireless networks.
-__Hub:__ A network device that repeats the traffic it receives to all connected devices.
-__Ethernet:__ A type of networking protocol- it defines the type of cables and connections that are used to wire computers, switches, and routers together. Most often cabling is Category 5 or 6.
-__Switch:__ A network device that sends traffic it receives to a specific connected device, such as a single desktop computer or laptop.
-__Router:__ A network device that can bridge between different networks, determine what traffic can pass between them, and perform other functions on a network, such as assigning IP addresses.
-__Firewall:__ A function typically performed by routers, this filters traffic between networks and can protect them from interference or attacks. 
+- __DHCP:__ Dynamic Host configuration protocol: It assigns IP address to client devices, such as desktop computers, laptops, and phones, when they are plugged into Ethernet or connected a wireless networks.
+- __Hub:__ A network device that repeats the traffic it receives to all connected devices.
+- __Ethernet:__ A type of networking protocol- it defines the type of cables and connections that are used to wire computers, switches, and routers together. Most often cabling is Category 5 or 6.
+- __Switch:__ A network device that sends traffic it receives to a specific connected device, such as a single desktop computer or laptop.
+- __Router:__ A network device that can bridge between different networks, determine what traffic can pass between them, and perform other functions on a network, such as assigning IP addresses.
+- __Firewall:__ A function typically performed by routers, this filters traffic between networks and can protect them from interference or attacks. 
