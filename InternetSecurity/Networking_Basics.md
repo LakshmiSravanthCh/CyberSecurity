@@ -52,7 +52,32 @@ Networks are made up of many devices:
 - Routers and firewalls: how to organise and control the flow of traffic on a network.
 
 ## IP Addresses:
-In oredr to send and direct packets through the network, computers need to be able to identify destinations and origins. This identification is an IP address. 
+In order to send and direct packets through the network, computers need to be able to identify destinations and origins. This identification is an IP address.
+
+## Gateway:
+A gateway is a network node that connects two networks using __different protocols__ together. While a __bridge__ is used to join 2 similar types of networks, a gateway is used to join 2 dissimilar networks. The most common gate way is a router that connects the home networks or enterprises to the internet. In most IP-based networks, the only traffic that doesn't go through at least one gateway is traffic among nodes on the same LAN segment - computers that are connected to the same switch. 
+
+## CIDR (Classless Inter-Domain Routing):
+CIDR is a way to allow more flexible allocation of IP addresses than was possible with the original system of IP address classes. As a result, the number of available IP addresses was greatly increased, which along with the wide spread use of NAT(network address translation), has significantly extended the useful life of IPv4.  
+Original IP addresses were assigned in 4 major address classes, A - D. Each of these classes allocates _one protion of the __32-bit IP address__ format to identify a network gateway._ The first 8 bits for class A, the first 16 bits for class B, and the first 24 for class C. The remainder identify hosts on that network. Class D addresses identify multicast domains.  
+Using the classes there was a disadvantage of wsting the unused IP addresses. BUt using the CIDR for the IP addresses the range and life of the IP addresses has been increased.  
+
+__CIDR lets one routing table entry to represent an aggregation of networks that exist in the forward path that don't need to be specified on that particular gateway. This aggregation of networks in a single address is sometimes referred to as a _supernet_.__  
+
+Using CIDR, each IP address has a _network prefix_ that identifies one or several network gateways. The length of the network prefix in IPv4 CIDR is also specified as a part of the IP address and varies depending on the number of bits needed, rather than any arbitrary class assignment structure.  
+
+- A destination IP address or route that describes many possible destinations has a shorter prefix and is said to be less specific. A longer prefix describes a destination gateway more specifically. _Routers_ are required to use the most specific, or longest, network prefix in the routing table when forwarding the packets.  
+```
+A CIDR network address under IPv4:  
+10.0.1.20/18  
+The 10.0.1.20 is the network address itself and the 18 says that the first 18 bits are the network part of the address, leaving 14 bits for specific host addresses.
+```
+
+## Subnet (Subnetwork):
+
+
+## VLAN (Virtual LAN):
+A VLAN abstracts the idea of the local area network by providing the data link connectivity to a subnet. One or more network switches may support multiple, independent VLANs, creating Layer 2 (data link) implmentations of subnets. ` 
 
 ## Network Hubs and Switches:
 Switches control only the packets intended for certain number of IP addresses to pass through switchs. The switch only know about the addresses of the computers that are switched directly into the switch. So you can only send messages to a small number of devices - how many ports the switch has. If you need to send a mesaage to a computer on another network, it will need to be sent through a router.
